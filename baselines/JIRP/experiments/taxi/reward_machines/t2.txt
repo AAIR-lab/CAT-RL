@@ -1,0 +1,38 @@
+3 # initial state (passenger at location A, destination D) non-sparse reward setting
+
+(3,2,'e',ConstantRewardFunction(-1))
+(3,1,'a',ConstantRewardFunction(-1))
+(2,1,'a',ConstantRewardFunction(-1))
+(1,2,'e',ConstantRewardFunction(-1))
+(2,3,'!e&!a&!n',ConstantRewardFunction(-1))
+
+(3,14,'n',ConstantRewardFunction(-100))
+(14,3,'!n&!a&!e',ConstantRewardFunction(-1))
+(14,2,'e',ConstantRewardFunction(-1))
+(2,14,'n',ConstantRewardFunction(-100))
+(14,1,'a',ConstantRewardFunction(-1))
+(14,14,'n',ConstantRewardFunction(-100))
+
+
+(1,0,'!a&!e&!n',ConstantRewardFunction(-1))
+(0,1,'a',ConstantRewardFunction(-1))
+
+(1,15,'n',ConstantRewardFunction(-100))
+(15,1,'a',ConstantRewardFunction(-1))
+(15,0,'!n&!a&!e',ConstantRewardFunction(-1))
+(15,15,'n',ConstantRewardFunction(-100))
+
+
+(0,16,'n',ConstantRewardFunction(-100))
+(16,0,'!n&!d&!h',ConstantRewardFunction(-1))
+(16,10,'d',ConstantRewardFunction(-1))
+(10,16,'n',ConstantRewardFunction(-100))
+(16,11,'h',ConstantRewardFunction(-1))
+(16,16,'n',ConstantRewardFunction(-100))
+
+(11,10,'d',ConstantRewardFunction(-1))
+(10,0,'!d&!h&!n',ConstantRewardFunction(-1))
+(0,10,'d',ConstantRewardFunction(-1))
+(10,11,'h',ConstantRewardFunction(500)) # set reward to 1 if destination
+
+(11,11,'True',ConstantRewardFunction(0)) # final state

@@ -1,0 +1,5 @@
+0 # initial state
+(0,0,'!a&!g',ConstantRewardFunction(-1))
+(0,1,'a',ConstantRewardFunction(-1000))
+(0,2,'g',ConstantRewardFunction(500))
+(2,2,'True',ConstantRewardFunction(0))

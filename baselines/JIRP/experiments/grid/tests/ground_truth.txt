@@ -1,0 +1,4 @@
+"gridworld"
+"../experiments/grid/maps/map_1.map" # map
+["../experiments/grid/reward_machines/t%d.txt"%i for i in [2]]  # tasks
+[14] # optimal policies
